@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martials Arts</title>
+
+    <!-- Bootstrap-css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap-js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <canvas
+      class="container-fluiod"
+      id="mycanvas"
+      style="
+        background-image: url('images/background.jpg');
+        background-size: cover;
+      "
+      width="1260"
+      height="600"
+    ></canvas>
+    <div class="GameStart">
+      <h1
+        class="heading"
+        style="font-family: 'Fredoka One', cursive; font-size: 4rem"
+      >
+        Martials Arts
+      </h1>
+      <a href="main.html"
+        ><button type="button" class="btn btn-outline-secondary">
+          Start
+        </button></a
+      >
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Help
+      </button>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Help</h2>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <scan style="color: red">Player 1 - Keys</scan><br />
+              <scan style="color: blue">(Kick)</scan> - Click d letter in the
+              keyboard to kick <br />
+              <scan style="color: blue">(Punch)</scan> - Click a letter in the
+              keyboard to punch<br />
+              <scan style="color: blue"> (Forward)</scan> - Click x letter in
+              the keyboard to go forward<br />
+              <scan style="color: blue"> (Block)</scan> - Click w letter in the
+              keyboard to block<br />
+              <scan style="color: blue">(Backward)</scan> - Click z letter in
+              the keyboard to go backward<br />
+              <br /><br />
+              <scan style="color: red"> Player 2 - Keys</scan><br />
+              <scan style="color: blue">(Kick)</scan>- Click k letter in the
+              keyboard to kick<br />
+              <scan style="color: blue">(Punch)</scan> - Click p letter in the
+              keyboard to punch<br />
+              <scan style="color: blue"> (Forward)</scan> - Left Arrow to go
+              forward <br />
+              <scan style="color: blue"> (Block)</scan> - Click i letter in the
+              keyboard to block<br />
+              <scan style="color: blue">(Backward)</scan> - Right Arrow to go
+              backward
+            </p>
+            <br />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="GamePlayer.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

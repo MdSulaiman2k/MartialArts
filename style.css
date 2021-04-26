@@ -1,0 +1,27 @@
+body {
+  overflow: hidden;
+}
+.GameStart {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+  left: 40rem;
+  top: 0rem;
+  padding: 5rem;
+}
+
+.btn {
+  margin-left: 10rem;
+  margin-top: 2rem;
+  padding: 0.5rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  font-family: "EB Garamond", serif;
+}
+
+.modal-body {
+  background-color: ghostwhite;
+  font-family: "EB Garamond", serif;
+  line-height: 2rem;
+}

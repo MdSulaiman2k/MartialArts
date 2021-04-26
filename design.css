@@ -1,0 +1,49 @@
+body {
+  overflow: hidden;
+  border-radius: 5px;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "EB Garamond", serif;
+}
+
+.button-container {
+  margin-top: -1rem;
+  padding: 0.3rem 1rem;
+  height: 3rem;
+}
+
+.btn {
+  margin-left: 1.5rem;
+}
+
+.energy {
+  width: 20px;
+  height: 15px;
+  background-color: green;
+  display: inline-block;
+}
+
+.energy-opp {
+  width: 20px;
+  height: 15px;
+  background-color: red;
+  display: inline-block;
+}
+
+#winBy {
+  margin: 1rem;
+  line-height: 1;
+  font-family: "EB Garamond", serif;
+}
+
+.modal-body {
+  background-color: ghostwhite;
+  font-family: "EB Garamond", serif;
+  line-height: 2rem;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
