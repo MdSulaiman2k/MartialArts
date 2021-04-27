@@ -70,6 +70,10 @@ player1.loadimages((images) => {
     ) {
       player2.checkGameOver(player1);
     }
+    if (player1.score == 5 || player2.score == 5)
+      $("body").css("background-image", "url('images/background2.png')");
+    if (player1.score == 2 || player2.score == 2)
+      $("body").css("background-image", "url('images/background1.png')");
   };
   aux();
   $("#kick").on("click", function () {
@@ -167,15 +171,4 @@ $("document").ready(function () {
   $("#close").on("click", function () {
     window.location.replace("index.html");
   });
-
-  setInterval(function () {
-    timming += 30000;
-    if (count % 3 == 0) {
-      $("body").css("background-image", "url('images/background2.png')");
-      count++;
-    } else {
-      $("body").css("background-image", "url('images/background1.png')");
-      count++;
-    }
-  }, timming);
 });
