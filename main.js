@@ -37,9 +37,10 @@ player1.loadimages((images) => {
         opponentAnimation,
         aux
       );
-
-    // if selectedAnimation stored 'idle' the audio will not play
+    if (selectedAnimation == "block" || opponentAnimation == "oppblock")
+      play = "block";
     if (selectedAnimation != "idle" || opponentAnimation != "oppidle") {
+      // if selectedAnimation stored 'idle' the audio will not play
       playAudio(play);
     }
 
@@ -57,10 +58,16 @@ player1.loadimages((images) => {
       opponentAnimation == "oppforward" && player2.steps > player1.steps + 50
         ? 100
         : 0;
-    if (selectedAnimation == "kick" || selectedAnimation == "punch") {
+    if (
+      (selectedAnimation == "kick" || selectedAnimation == "punch") &&
+      opponentAnimation != "oppblock"
+    ) {
       player1.checkGameOver(player2);
     }
-    if (opponentAnimation == "oppkick" || opponentAnimation == "opppunch") {
+    if (
+      (opponentAnimation == "oppkick" || opponentAnimation == "opppunch") &&
+      selectedAnimation != "block"
+    ) {
       player2.checkGameOver(player1);
     }
   };
