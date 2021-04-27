@@ -1,7 +1,7 @@
 let player1 = new GamePlayer(1, -100);
 let player2 = new GamePlayer(2, 850);
 // it will store the which audio to stored
-let play;
+let play = "";
 
 // this function is used to play the Audio
 function playAudio(filename) {
@@ -170,7 +170,6 @@ $("document").ready(function () {
 
   setInterval(function () {
     timming += 30000;
-    console.log();
     if (count % 3 == 0) {
       $("body").css("background-image", "url('images/background2.png')");
       count++;
