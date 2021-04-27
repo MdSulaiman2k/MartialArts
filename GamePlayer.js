@@ -91,7 +91,7 @@ class GamePlayer {
             500,
             500
           );
-      }, index * 125);
+      }, index * 100);
     });
     setTimeout(callback, images[animation].length * 100);
   };
