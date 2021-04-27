@@ -91,13 +91,14 @@ class GamePlayer {
             500,
             500
           );
-      }, index * 100);
+      }, index * 125);
     });
     setTimeout(callback, images[animation].length * 100);
   };
 
   // Check whether the game was over or not and reduce the opponent score
   checkGameOver = (opponentplayer) => {
+    // difference is store the value of difference between 1st player and 2nd player
     let difference =
       this.player == 1
         ? opponentplayer.steps - (this.steps + 100)

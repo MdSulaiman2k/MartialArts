@@ -1,14 +1,19 @@
 let player1 = new GamePlayer(1, -100);
 let player2 = new GamePlayer(2, 850);
+// it will store the which audio to stored
 let play;
 
+// this function is used to play the Audio
 function playAudio(filename) {
   var audio = new Audio("audio/" + filename + ".mp3");
   audio.play();
 }
 
+// The function is call the loadimages
 player1.loadimages((images) => {
+  // the array  is used to  animate the action in queue for 1st player
   let queueAnimation = [];
+  // the array  is used to  animate the action in queue for 2nd player
   let oppqueueAnimation = [];
   let aux = () => {
     let selectedAnimation;
@@ -24,6 +29,7 @@ player1.loadimages((images) => {
       opponentAnimation = oppqueueAnimation.shift();
     }
     if (player1.score > 0 && player2.score > 0)
+      // the animate function is used to clear and draw the both images
       player1.animate(
         player2,
         images,
@@ -32,6 +38,7 @@ player1.loadimages((images) => {
         aux
       );
 
+    // if selectedAnimation stored 'idle' the audio will not play
     if (selectedAnimation != "idle" || opponentAnimation != "oppidle") {
       playAudio(play);
     }
@@ -98,7 +105,7 @@ player1.loadimages((images) => {
     oppqueueAnimation.push("oppbackward");
     play = "walk";
   });
-  document.addEventListener("keyup", (event) => {
+  document.addEventListener("keydown", (event) => {
     const key = event.key;
     switch (key) {
       case "a":
