@@ -161,8 +161,22 @@ player1.loadimages((images) => {
   });
 });
 
+var timming = 10000;
+var count = 0;
 $("document").ready(function () {
-  $("close").on("click", function () {
+  $("#close").on("click", function () {
     window.location.replace("index.html");
   });
+
+  setInterval(function () {
+    timming += 30000;
+    console.log();
+    if (count % 3 == 0) {
+      $("body").css("background-image", "url('images/background2.png')");
+      count++;
+    } else {
+      $("body").css("background-image", "url('images/background1.png')");
+      count++;
+    }
+  }, timming);
 });

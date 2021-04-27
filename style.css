@@ -1,5 +1,9 @@
 body {
   overflow: hidden;
+  background: url("images/kunfubg3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 .GameStart {
   position: absolute;
@@ -11,17 +15,32 @@ body {
   padding: 5rem;
 }
 
+.GameStart p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .btn {
   margin-left: 10rem;
   margin-top: 2rem;
-  padding: 0.5rem 2.5rem;
+  padding: 8px 8px;
   font-size: 1.5rem;
-  border-radius: 1rem;
-  font-family: "EB Garamond", serif;
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  width: 200px;
+  border: 3px solid rgb(255, 31, 71);
 }
-
+.btn:hover {
+  background-color: rgb(255, 31, 71);
+  color: #000;
+}
 .modal-body {
   background-color: ghostwhite;
-  font-family: "EB Garamond", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   line-height: 2rem;
+}
+canvas {
+  margin-top: 100px;
 }

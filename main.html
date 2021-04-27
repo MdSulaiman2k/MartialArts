@@ -40,7 +40,9 @@
         style="padding: 0.5rem 0.5rem 0.5rem 3rem"
       >
         <div class="col-lg-3">
-          <scan style="line-height: 1; font-size: larger">Player 1</scan>
+          <scan style="line-height: 1; font-size: larger; color: green"
+            >Player 1</scan
+          >
           <div class="player">
             <div class="energy" id="player1"></div>
             <div class="energy" id="player2"></div>
@@ -56,8 +58,16 @@
         </div>
         <div class="col-lg-4"></div>
         <div class="col-lg-3">
-          <scan style="line-height: 1; font-size: larger">Player 2</scan>
-          <div class="player">
+          <scan
+            style="
+              line-height: 1;
+              font-size: larger;
+              color: red;
+              margin-left: 13rem;
+            "
+            >Player 2</scan
+          >
+          <div class="player" style="margin-left: 3.2rem">
             <div class="energy-opp" id="opp1"></div>
             <div class="energy-opp" id="opp2"></div>
             <div class="energy-opp" id="opp3"></div>
@@ -70,7 +80,7 @@
             <div class="energy-opp" id="opp10"></div>
           </div>
         </div>
-        <div class="col-lg-2" style="padding-left: 3rem">
+        <div class="col-lg-1" style="padding-left: 3rem">
           <button
             class="btn btn-outline-warning"
             id="help"
@@ -129,11 +139,6 @@
             </p>
             <br />
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              Close
-            </button>
-          </div>
         </div>
       </div>
     </div>
@@ -168,9 +173,9 @@
     ></canvas>
     <div class="container-fluiod button-container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <button
-            class="btn btn-outline-success"
+            class="btn btn-control btn-outline-success"
             id="kick"
             data-toggle="tooltip"
             data-placement="top"
@@ -181,11 +186,11 @@
               width="50px"
               height="25px"
               alt="kick"
-              src="images/p1kick.png"
+              src="images/kick.png"
             />
           </button>
           <button
-            class="btn btn-outline-success"
+            class="btn btn-control btn-outline-success"
             id="punch"
             data-toggle="tooltip"
             data-placement="top"
@@ -200,7 +205,7 @@
             />
           </button>
           <button
-            class="btn btn-outline-success"
+            class="btn btn-control btn-outline-success"
             id="block"
             data-toggle="tooltip"
             data-placement="top"
@@ -215,7 +220,7 @@
             />
           </button>
           <button
-            class="btn btn-outline-success"
+            class="btn btn-control btn-outline-success"
             id="backward"
             data-toggle="tooltip"
             data-placement="top"
@@ -230,7 +235,7 @@
             />
           </button>
           <button
-            class="btn btn-outline-success"
+            class="btn btn-control btn-outline-success"
             id="forward"
             data-toggle="tooltip"
             data-placement="top"
@@ -245,9 +250,9 @@
             />
           </button>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <button
-            class="btn btn-outline-danger"
+            class="btn btn-control btn-outline-danger"
             id="oppkick"
             data-toggle="tooltip"
             data-placement="top"
@@ -258,11 +263,11 @@
               width="50px"
               height="25px"
               alt="oppkick"
-              src="images/oppKick.png"
+              src="images/kick.png"
             />
           </button>
           <button
-            class="btn btn-outline-danger"
+            class="btn btn-control btn-outline-danger"
             id="opppunch"
             data-toggle="tooltip"
             data-placement="top"
@@ -277,7 +282,7 @@
             />
           </button>
           <button
-            class="btn btn-outline-danger"
+            class="btn btn-control btn-outline-danger"
             id="oppblock"
             data-toggle="tooltip"
             data-placement="top"
@@ -292,7 +297,7 @@
             />
           </button>
           <button
-            class="btn btn-outline-danger"
+            class="btn btn-control btn-outline-danger"
             id="oppbackward"
             data-toggle="tooltip"
             data-placement="top"
@@ -307,7 +312,7 @@
             />
           </button>
           <button
-            class="btn btn-outline-danger"
+            class="btn btn-control btn-outline-danger"
             id="oppforward"
             data-toggle="tooltip"
             data-placement="top"

@@ -1,10 +1,10 @@
 body {
   overflow: hidden;
   border-radius: 5px;
-  background-image: url("images/background.jpg");
+  background-image: url("images/background1.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "EB Garamond", serif;
+  background-size: 100% 110%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .button-container {
@@ -13,10 +13,17 @@ body {
   height: 3rem;
 }
 
-.btn {
-  margin-left: 1.5rem;
+.btn-control {
+  margin-left: 1.3rem;
+  margin-top: -1rem;
+  background-color: rgb(154, 255, 255);
+  padding: 15px 10px;
+  border: 2px solid black;
 }
-
+.btn-control btn-outline-danger {
+  margin-left: 50px;
+  background-color: red;
+}
 .energy {
   width: 20px;
   height: 15px;
@@ -34,12 +41,12 @@ body {
 #winBy {
   margin: 1rem;
   line-height: 1;
-  font-family: "EB Garamond", serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .modal-body {
   background-color: ghostwhite;
-  font-family: "EB Garamond", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   line-height: 2rem;
 }
 
