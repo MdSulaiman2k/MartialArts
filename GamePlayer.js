@@ -81,7 +81,7 @@ class GamePlayer {
     images[animation].forEach((image, index) => {
       setTimeout(() => {
         this.ctx.clearRect(0, -20, 1300, 500);
-        if (index <= images[animation].length)
+        if (index < images[animation].length)
           this.ctx.drawImage(image, this.steps, -20, 500, 500);
         if (opponentplayer != null && index < images[opponentanimation].length)
           this.ctx.drawImage(
