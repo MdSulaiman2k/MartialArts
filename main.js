@@ -165,8 +165,6 @@ player1.loadimages((images) => {
   });
 });
 
-var timming = 10000;
-var count = 0;
 $("document").ready(function () {
   $("#close").on("click", function () {
     window.location.replace("index.html");
